@@ -21,7 +21,6 @@ namespace QQ.Framework.Domains.Commands.ResponseCommands.Message
                 {
                     _service.MessageLog($"收到群{_packet.Group}的{_packet.FromQQ}的乱码消息。");
                 }
-
                 _service.MessageLog($"收到群{_packet.Group}的{_packet.FromQQ}的消息:{_packet.Message}");
             }
             else
@@ -31,7 +30,6 @@ namespace QQ.Framework.Domains.Commands.ResponseCommands.Message
 
             //提取数据
             var dataReader = new BinaryReader(new MemoryStream(_packet.BodyDecrypted));
-
             _service.Send(new Send_0X0017(_user, dataReader.ReadBytes(0x10), _packet.Sequence));
 
 

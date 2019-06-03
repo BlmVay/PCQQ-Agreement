@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\CharRobot.dll.config
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\CharRobot.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\CharRobot.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\ChatRobot.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\ChatRobot.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\ChatRobot.csproj.Fody.CopyLocal.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\ChatRobot.csproj.CopyComplete
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\CharRobot.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\CharRobot.pdb

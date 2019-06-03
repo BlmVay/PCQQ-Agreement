@@ -145,7 +145,7 @@ namespace QQ.Framework
         /// <summary>
         ///     是否打开控制台日志
         /// </summary>
-        public static bool DebugLog = true;
+        public static bool DebugLog = false;
 
         public static byte[] QqexeMD5 { get; set; } =
             {0xfa, 0xcf, 0x7c, 0xc5, 0xae, 0x02, 0xe6, 0x65, 0x0c, 0x01, 0x07, 0xcd, 0xfe, 0x0e, 0x1b, 0x2c};

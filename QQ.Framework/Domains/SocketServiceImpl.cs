@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using Base_Plugins;
 using QQ.Framework.Packets;
 using QQ.Framework.Packets.Send.Login;
 using QQ.Framework.Utils;
@@ -80,12 +81,14 @@ namespace QQ.Framework.Domains
         {
             var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "yanzhengma");
             var img = ImageHelper.CreateImageFromBytes(path, data);
-            Console.Write($"请输入验证码({img}):");
-            var code = Console.ReadLine();
-            if (!string.IsNullOrEmpty(code))
-            {
-                Send(new Send_0X00Ba(_user, code));
-            }
+            VerifyCode verifyCode = new VerifyCode(this, _user);
+            verifyCode.ShowDialog();
+            //Console.Write($"请输入验证码({img}):");
+            //var code = Console.ReadLine();
+            //if (!string.IsNullOrEmpty(code))
+            //{
+            //    Send(new Send_0X00Ba(_user, code));
+            //}
         }
     }
 }

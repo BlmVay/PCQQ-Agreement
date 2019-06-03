@@ -4,12 +4,14 @@ namespace QQ.Framework.HttpEntity
 {
     public class FriendList
     {
+        
         public int? Ec { get; set; }
         public List<FriendCateItem> Result { get; set; }
     }
 
     public class FriendCateItem
     {
+        public int? gid { get; set; }
         public string Gname { get; set; }
         public List<FriendItem> Mems { get; set; }
     }

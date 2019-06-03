@@ -19,7 +19,7 @@ namespace QQ.Framework.Sockets
         /// <summary>
         ///     账号信息
         /// </summary>
-        private readonly QQUser _user;
+        public readonly QQUser _user;
 
         /// <summary>
         ///     消息转发器

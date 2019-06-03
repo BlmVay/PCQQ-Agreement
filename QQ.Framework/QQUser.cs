@@ -59,7 +59,6 @@ namespace QQ.Framework
         ///     0836密钥1
         /// </summary>
         public byte[] QQPacket0836Key1 { get; set; } = Util.RandomKey();
-
         public byte[] QQPacket00BaVerifyCode { get; set; }
         public byte QQPacket00BaSequence { get; set; } = 0x01;
 
@@ -96,7 +95,7 @@ namespace QQ.Framework
         /// <summary>
         ///     设置登陆服务器的方式是UDP还是TCP 默认UDP
         /// </summary>
-        public bool IsUdp { get; set; } = true;
+        public bool IsUdp { get; set; } = false;
 
         /// <summary>
         ///     昵称
@@ -338,6 +337,7 @@ namespace QQ.Framework
                     httpWebClient.Cookies = QunCookies;
                     var text = Encoding.UTF8.GetString(httpWebClient.UploadData(address, "POST",
                         Encoding.UTF8.GetBytes(s)));
+                    Console.WriteLine("过滤前:" + text);
                     var r = new Regex("\"[0-9]+\":");
                     if (r.IsMatch(text))
                     {
@@ -346,11 +346,11 @@ namespace QQ.Framework
                             var str = ((Capture) match).Value;
                             text = text.Replace(str, "");
                         }
-
-                        text = text.Replace("\"result\":{{", "\"result\":[{").Replace("\"}}}", "\"}]}");
+                        text = text.Replace("\"result\":{{", "\"result\":[{").Replace("}}}", "}]}");
+                        Console.WriteLine("过滤后:"+text);
                     }
 
-                    MessageLog("获取好友列表成功:" + text);
+                    //MessageLog("获取好友列表成功:" + text);
                     return JsonConvert.DeserializeObject<FriendList>(text);
                 }
             }

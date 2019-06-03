@@ -213,6 +213,11 @@ namespace QQ.Framework.Packets.Send.Message
         public long ConvertQQGroupId(long code)
         {
             var group = code.ToString();
+            Console.WriteLine("group:" + group);
+            if (group.Length <6)
+            {
+                return code;
+            }
             var left = Convert.ToInt64(group.Substring(0, group.Length - 6));
             string right = "", gid = "";
             if (left >= 1 && left <= 10)

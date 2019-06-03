@@ -11,7 +11,7 @@ namespace QQ.Framework.Domains
         /// <summary>
         ///     消息发送服务
         /// </summary>
-        protected readonly ISendMessageService _service;
+        public readonly ISendMessageService _service;
 
         /// <summary>
         ///     消息转发器
@@ -28,11 +28,9 @@ namespace QQ.Framework.Domains
             _service = service;
             _transponder = transponder;
             _user = user;
-
             // 将机器人加入转发器的订阅列表中
             _transponder.AddCustomRoBot(this);
         }
-
         public abstract void ReceiveFriendMessage(long friendNumber, Richtext content);
         public abstract void ReceiveGroupMessage(long groupNumber, long fromNumber, Richtext content);
     }

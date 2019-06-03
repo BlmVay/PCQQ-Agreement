@@ -35,9 +35,16 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domains\Commands\PacketCommand.cs" />
@@ -88,6 +95,12 @@
     <Compile Include="Domains\SocketServiceImpl.cs" />
     <Compile Include="Domains\Transponder.cs" />
     <Compile Include="Events\QQEventArgs.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Packets\HttpEntity\FriendList.cs" />
     <Compile Include="Packets\HttpEntity\GroupList.cs" />
     <Compile Include="Packets\HttpEntity\GroupMembers.cs" />
@@ -225,7 +238,12 @@
     <Compile Include="Utils\StringHandlingPackets.cs" />
     <Compile Include="Utils\TeaCrypter.cs" />
     <Compile Include="Utils\Util.cs" />
+    <Compile Include="Utils\VerifyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\VerifyCode.Designer.cs" />
     <Compile Include="Utils\XXTeaCrypter.cs" />
+    <Compile Include="_007Robot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Docs\add_your_custom_robot.md" />
@@ -241,9 +259,12 @@
     <PackageReference Include="Ionic.Zlib">
       <Version>1.9.1.5</Version>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.2</Version>
-    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\VerifyCode.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

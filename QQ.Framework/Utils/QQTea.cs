@@ -263,7 +263,6 @@ namespace QQ.Framework.Utils
             {
                 result += b.ToString("x2");
             }
-
             return result;
         }
     }

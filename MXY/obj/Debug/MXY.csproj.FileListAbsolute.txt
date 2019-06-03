@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\MXY.dll.config
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\MXY.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\MXY.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.csproj.Fody.CopyLocal.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.csproj.CopyComplete
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\MXY\obj\Debug\MXY.pdb

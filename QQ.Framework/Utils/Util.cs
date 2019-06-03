@@ -545,7 +545,7 @@ namespace QQ.Framework.Utils
         {
             bw.Write(BitConverter.GetBytes((uint) v).Reverse().ToArray());
         }
-
+        
         /// <summary>
         ///     写入一串秘钥（因为结构需要前置秘钥长度）
         /// </summary>

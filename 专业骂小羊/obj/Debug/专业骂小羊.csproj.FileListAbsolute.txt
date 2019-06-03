@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\obj\Debug\专业骂小羊.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\obj\Debug\专业骂小羊.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\obj\Debug\专业骂小羊.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\专业骂小羊.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\专业骂小羊.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\Costura.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\IPlugin.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\QQ.Framework.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\Ionic.Zlib.dll
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\Costura.xml
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\IPlugin.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\QQ.Framework.pdb
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\obj\Debug\专业骂小羊.csproj.CopyComplete
+C:\Users\Administrator\source\repos\PCQQ-Agreement\专业骂小羊\obj\Debug\专业骂小羊.csprojAssemblyReference.cache
